@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         if (spinner) spinner.classList.remove("d-none");
         btn.disabled = true;
 
-        const res = await fetch("http://localhost:3000/submit-lead", {
+        const res = await fetch("https://www.sprecrm.com/submit-lead", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(payload),
